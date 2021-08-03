@@ -14,7 +14,7 @@ Clone the repo and install the package with pip
 
     git clone https://github.com/wahlflo/pyFileCarving
     cd pyFileCarving
-    pip install .
+    pip3 install .
 
 ## Usage
 Type ```pyFileCarving --help``` to view the help.
