@@ -20,7 +20,7 @@ Clone the repo and install the package with pip
 Type ```pyFileCarving --help``` to view the help.
 
 ```
-usage: run.py -i INPUT -o OUTPUT
+usage: pyFileCarving -i INPUT -o OUTPUT
 
 optional arguments:
   -h, --help            show this help message and exit

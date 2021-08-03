@@ -16,7 +16,7 @@ def __convert_seconds(seconds_total):
 
 
 def main():
-    parser = argparse.ArgumentParser(usage='run.py -i INPUT -o OUTPUT')
+    parser = argparse.ArgumentParser(usage='pyFileCarving -i INPUT -o OUTPUT')
     parser.add_argument('-i', '--input', type=str, help='Path to the device or file which should be scanned')
     parser.add_argument('-o', '--output', type=str, help='Path to the output directory')
     parser.add_argument('-c', '--no-corruption-checks', dest='no_corruption_checks', help='No corruption checks will be made, which faster the scan', action='store_true', default=False)
