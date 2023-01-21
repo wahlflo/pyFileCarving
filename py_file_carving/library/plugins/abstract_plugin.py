@@ -2,7 +2,7 @@ import logging
 import re
 from abc import ABC, abstractmethod
 
-from py_file_carving.libary.worker import AbstractWorker
+from py_file_carving.library.worker import AbstractWorker
 
 logger = logging.getLogger(__name__)
 

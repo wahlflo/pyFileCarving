@@ -4,7 +4,7 @@ import re
 
 from PIL import Image
 
-from py_file_carving.libary.worker import AbstractWorker
+from py_file_carving.library.worker import AbstractWorker
 from ..abstract_plugin import AbstractPlugin
 
 logger = logging.getLogger(__name__)

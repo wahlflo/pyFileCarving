@@ -1,7 +1,7 @@
 import re
 
-from py_file_carving.libary.plugins.abstract_plugin import AbstractPlugin
-from py_file_carving.libary.worker import WorkerSequenceTerminating
+from py_file_carving.library.plugins.abstract_plugin import AbstractPlugin
+from py_file_carving.library.worker import WorkerSequenceTerminating
 
 
 class PrivateDSAKey(AbstractPlugin):

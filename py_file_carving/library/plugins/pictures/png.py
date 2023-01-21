@@ -2,7 +2,7 @@ import io
 
 from PIL import Image
 
-from py_file_carving.libary.worker import AbstractWorker, WorkerSequenceTerminating
+from py_file_carving.library.worker import AbstractWorker, WorkerSequenceTerminating
 from ..abstract_plugin import AbstractPlugin
 
 

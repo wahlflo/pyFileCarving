@@ -1,18 +1,18 @@
 import re
 
-from py_file_carving.libary.plugins.abstract_plugin import AbstractPlugin
-from py_file_carving.libary.worker import WorkerSequenceTerminating
+from py_file_carving.library.plugins.abstract_plugin import AbstractPlugin
+from py_file_carving.library.worker import WorkerSequenceTerminating
 
 
-class CertificateRequest(AbstractPlugin):
+class PrivateECKey(AbstractPlugin):
     def __init__(self, file_writer, make_corruption_checks: bool, flush_if_maximum_file_size_is_reached: bool):
         super().__init__(file_writer=file_writer, make_corruption_checks=make_corruption_checks,
                          flush_if_maximum_file_size_is_reached=flush_if_maximum_file_size_is_reached)
-        self.pattern_trigger_sequence.append(re.compile(b'-----BEGIN CERTIFICATE REQUEST-----'))
+        self.pattern_trigger_sequence.append(re.compile(b'-----BEGIN PRIVATE EC KEY-----'))
 
     def create_worker(self, first_chunk: bytes):
         return WorkerSequenceTerminating(first_chunk=first_chunk,
-                                         footer_sequence=b'-----END CERTIFICATE REQUEST-----',
+                                         footer_sequence=b'-----END PRIVATE EC KEY-----',
                                          maximal_size_in_bytes=50 * 1024,
-                                         file_extension='crt',
+                                         file_extension='private_key',
                                          make_corruption_checks=self.make_corruption_checks)

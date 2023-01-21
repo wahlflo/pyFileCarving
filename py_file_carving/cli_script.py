@@ -4,8 +4,8 @@ import time
 
 from cli_formatter.output_formatting import warning, info
 
-from .libary import FileCarver
-from .libary.plugins import *
+from .library import FileCarver
+from .library.plugins import *
 
 
 def __convert_seconds(seconds_total):

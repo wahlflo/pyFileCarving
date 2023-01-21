@@ -5,7 +5,7 @@ import re
 import PyPDF2
 import PyPDF2.utils
 
-from py_file_carving.libary.worker import WorkerMaximalSizeTerminating
+from py_file_carving.library.worker import WorkerMaximalSizeTerminating
 from ..abstract_plugin import AbstractPlugin
 
 logger = logging.getLogger(__name__)
